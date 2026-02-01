@@ -1,0 +1,100 @@
+/* Global Rules*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-color: #0048e0; /* colors: #1743e3 #0bdaff #ffdb05 */
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+.container {
+  font-family:
+    "poppins", sans-serif; /* fonts: Source Sans Pro, lato san serif */
+  width: 90%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  display: flex;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+/*media queries*/
+@media (max-width: 1010px) {
+  .text {
+    margin: 500px 0 50px 0;
+    width: 100%;
+  }
+  p {
+    width: 70%;
+  }
+}
+@media (max-width: 880px) {
+  .links {
+    display: none;
+  }
+  .dropmenu-btn ion-icon {
+    display: block;
+  }
+  .header .text {
+    width: 90%;
+  }
+}
+@media (max-width: 660px) {
+  .image {
+    width: 550px;
+    right: -55px;
+  }
+  h1 {
+    font-size: 37px;
+  }
+  p {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .header::before {
+    width: 350px;
+    height: 500px;
+    top: -220px;
+    right: -280px;
+  }
+  .header::after {
+    width: 200px;
+    height: 230px;
+    top: 20px;
+    right: -40px;
+  }
+  .image {
+    width: 400px;
+    top: 80px;
+    right: -33px;
+  }
+  .header .text {
+    margin-top: 300px;
+    width: 100%;
+  }
+  .header .text p {
+    width: 100%;
+  }
+  h1 {
+    font-size: 25px;
+  }
+}

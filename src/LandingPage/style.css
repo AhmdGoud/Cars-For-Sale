@@ -1,0 +1,179 @@
+.landing-page {
+  background-color: #eaeaea;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+/*strat navbar*/
+nav {
+  padding: 22px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 11;
+}
+.logo {
+  font-size: 33px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.links li a {
+  text-decoration: none;
+  color: #222;
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+  margin: 0 12px;
+  font-weight: 500;
+  position: relative;
+}
+.links li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transition: 0.2s;
+}
+.links li:hover a::after {
+  width: 100%;
+  left: 0;
+}
+.links li:hover a {
+  color: var(--main-color);
+}
+.social {
+  display: flex;
+}
+.social li {
+  margin: 0 12px;
+  z-index: 11;
+}
+.social li ion-icon {
+  color: #eee;
+  font-size: 22px;
+  transition: 0.2s;
+}
+.social li:hover ion-icon {
+  transform: scale(1.1);
+}
+.dropmenu-btn {
+  color: black;
+  position: relative;
+  right: -5px;
+  z-index: 1111;
+}
+.dropmenu-btn ion-icon {
+  font-size: 22px;
+  display: none;
+  cursor: pointer;
+  color: #eaeaea;
+}
+.dropmenu {
+  flex-direction: column;
+  background-color: #eaeaea;
+  position: absolute;
+  top: 27px;
+  right: 3px;
+  border-radius: 2px;
+  padding: 5px 0;
+  display: none;
+}
+.dropmenu a {
+  color: black;
+}
+.dropmenu a:hover {
+  color: var(--main-color);
+}
+.show-dropmenu {
+  display: flex;
+}
+.dropmenu::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-top: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #eaeaea;
+  border-left: 5px solid transparent;
+  position: absolute;
+  top: -15px;
+  right: 1px;
+}
+/*start header*/
+.header {
+  padding-top: 150px;
+  position: relative;
+}
+.header::before {
+  content: "";
+  width: 450px;
+  height: 600px;
+  background-color: var(--main-color);
+  transform: rotate(-45deg);
+  position: absolute;
+  top: -200px;
+  right: -280px;
+}
+.header::after {
+  content: "";
+  width: 330px;
+  height: 330px;
+  border: 28px solid var(--main-color);
+  background-color: #eaeaea;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 80px;
+  right: -60px;
+}
+.image {
+  width: 600px;
+  position: absolute;
+  top: 150px;
+  right: -40px;
+  z-index: 11;
+}
+.header .text {
+  width: 70%;
+}
+.header .text h1 {
+  text-align: start;
+  font-size: 44px;
+  text-transform: capitalize;
+}
+.header .text h2 {
+  text-align: start;
+
+  color: var(--main-color);
+  text-transform: capitalize;
+  font-size: 28px;
+}
+h2 span {
+  color: black;
+}
+.header .text p {
+  text-align: start;
+  width: 55%;
+  color: rgb(65, 64, 64);
+  margin: 22px 0;
+}
+.btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  width: fit-content;
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  transition: 0.5s;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.btn a {
+  color: var(--main-color);
+}
+.btn:hover {
+  background-color: var(--main-color);
+}
+.btn:hover a {
+  color: #fff;
+}
