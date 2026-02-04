@@ -2,15 +2,27 @@ import { useContext, useState } from "react";
 import { theCars } from "./CarsContext";
 // import NavBar from "../LandingPage/NavBar";
 import { styles } from "./carsStyles";
+import { Link } from "react-router-dom";
+
+import "./cars.css";
 
 const Cars = () => {
   const list = useContext(theCars);
 
   const [carsList, setCarsList] = useState(list);
-  const [filtered, setFiltered] = useState("");
   const [searchVal, setSearchVal] = useState("");
+  const [searchBtnColor, setSearchBtnColor] = useState("gray");
 
   const carCard = carsList.map((carData) => {
+    const btnStyle = {
+      backgroundColor: "#0048e0",
+      color: "#fff",
+      border: "none",
+      padding: "3px 8px",
+      borderRadius: "2px",
+      marginRight: "12px",
+      cursor: "pointer",
+    };
     return (
       <div className="car-card" key={carData.id}>
         <div style={styles.container}>
@@ -71,6 +83,11 @@ const Cars = () => {
                     </span>
                   </div>
                 </div>
+
+                <div style={{ textAlign: "start", display: "flex" }}>
+                  <button style={btnStyle}>Loan Calculator</button>
+                  <button style={btnStyle}>Compare</button>
+                </div>
               </div>
             </div>
           </div>
@@ -79,29 +96,67 @@ const Cars = () => {
     );
   });
 
-  return (
-    <>
-      <input
-        style={{ width: "50%" }}
-        value={searchVal}
-        onChange={(e) => {
-          setSearchVal(e.target.value);
-        }}
-      />
-      <button
-        onClick={() => {
-          const results = carsList.filter((ele) => {
-            return ele.brand.includes(searchVal);
-          });
-          setFiltered(results);
+  const searchBtnStyle = {
+    padding: "5px 8px",
+    backgroundColor: searchBtnColor,
+    color: "#fff",
+    border: "none",
+    position: "absolute",
+    top: "2px",
+    right: "0px",
+    cursor: "pointer",
+  };
 
-          setCarsList(filtered);
+  return (
+    <div style={{ padding: "50px 0" }}>
+      <div
+        className="searchBar"
+        style={{
+          position: "relative",
+          margin: "auto",
+          display: "flex",
         }}
       >
-        Search
-      </button>
+        <Link to={"/"}>
+          <button
+            className="backHome"
+            style={{ width: "120px", marginRight: "10px", padding: "5px" }}
+          >
+            Back Home
+          </button>
+        </Link>
+        <input
+          style={{ width: "100%", padding: "3px 8px", outline: "none" }}
+          value={searchVal}
+          placeholder="Search By brand"
+          onChange={(e) => {
+            setSearchVal(e.target.value);
+            if (e.target.value === "") {
+              setCarsList(list);
+            }
+            if (e.target.value !== "") {
+              setSearchBtnColor("#0048e0");
+            } else {
+              setSearchBtnColor("gray");
+            }
+          }}
+        />
+        <button
+          style={searchBtnStyle}
+          onClick={() => {
+            const results = carsList.filter((car) => {
+              return car.brand.includes(searchVal);
+            });
+
+            setCarsList(results);
+          }}
+        >
+          Search
+        </button>
+      </div>
+
       <div style={styles.carsCard}>{carCard}</div>
-    </>
+    </div>
   );
 };
 export default Cars;

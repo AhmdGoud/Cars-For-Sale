@@ -2,7 +2,7 @@ export const styles = {
   carsCard: {
     display: "flex",
     flexWrap: "wrap",
-    gap: "10px",
+    // gap: "10px",
     justifyContent: "space-around",
   },
   container: {
@@ -11,16 +11,16 @@ export const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    minHeight: "100vh",
+    // minHeight: "100vh",
     padding: "20px",
   },
   card: {
     background: "white",
-    borderRadius: "20px",
+    borderRadius: "10px",
     overflow: "hidden",
     maxWidth: "400px",
     width: "100%",
-    boxShadow: "0 10px 30px rgba(0, 0, 0, 0.3)",
+    boxShadow: "0 5px 15px rgba(0, 0, 0, 0.3)",
     transition: "transform 0.3s ease",
   },
   imageContainer: {
@@ -47,7 +47,7 @@ export const styles = {
     boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
   },
   content: {
-    padding: "25px",
+    padding: "0px 10px",
   },
   header: {
     marginBottom: "20px",
@@ -58,12 +58,14 @@ export const styles = {
     color: "#1a1a1a",
     marginBottom: "5px",
     margin: "0 0 5px 0",
+    textAlign: "start",
   },
   year: {
     fontSize: "16px",
     color: "#666",
     fontWeight: "500",
     margin: 0,
+    textAlign: "start",
   },
   price: {
     fontSize: "32px",

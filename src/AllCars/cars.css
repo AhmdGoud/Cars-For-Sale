@@ -1,0 +1,22 @@
+.backHome:hover {
+  background-color: #0048e0;
+  border-color: #0048e0;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.searchBar {
+  width: 50%;
+}
+
+@media (max-width: 660px) {
+  .searchBar {
+    width: 80%;
+  }
+}
+@media (max-width: 550px) {
+  .searchBar {
+    width: 90%;
+  }
+}
