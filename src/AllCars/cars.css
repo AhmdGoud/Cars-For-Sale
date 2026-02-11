@@ -9,6 +9,59 @@
 .searchBar {
   width: 50%;
 }
+.searchBtnStyle {
+  padding: 5px 8px;
+  color: #fff;
+  border: none;
+  position: absolute;
+  top: 2px;
+  right: 0px;
+  cursor: pointer;
+}
+.compareBtn {
+  background-color: #0048e0;
+  color: #fff;
+  border: none;
+}
+.loanBtn {
+  background-color: transparent;
+  color: #0048e0;
+  border: 1px solid #0048e0;
+}
+.compareBtn,
+.loanBtn {
+  padding: 3px 8px;
+  border-radius: 3px;
+  margin-right: 12px;
+  cursor: pointer;
+  width: 100px;
+}
+.loanBtn:hover {
+  background-color: #0048e0;
+  color: #fff;
+}
+.compareCard {
+  padding: 0 12px;
+  background-color: #0048e0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 400px;
+  width: 100%;
+  font-size: 33px;
+  margin: 20px auto;
+  position: fixed;
+  top: 100px;
+  z-index: 11;
+}
+.comparsion {
+  padding: 8px 12px;
+  background-color: #fff;
+  color: #0048e0;
+}
 
 @media (max-width: 660px) {
   .searchBar {

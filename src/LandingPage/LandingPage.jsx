@@ -8,9 +8,7 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <div className="container" style={{ width: "90%", margin: "0 auto" }}>
-        {/* <!--start navbar--> */}
         <NavBar />
-        {/* <!--strat header--> */}
         <header className="header">
           <div className="text">
             <h1 style={{ fontWeight: "600" }}>car dealing experience</h1>

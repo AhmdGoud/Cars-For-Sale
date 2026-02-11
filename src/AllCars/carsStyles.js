@@ -1,9 +1,12 @@
 export const styles = {
   carsCard: {
-    display: "flex",
-    flexWrap: "wrap",
-    // gap: "10px",
-    justifyContent: "space-around",
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+    gap: "10px",
+    width: "90%",
+    margin: "40px auto",
+    border: "1px solid gray",
+    borderRadius: "3px",
   },
   container: {
     fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
@@ -11,14 +14,13 @@ export const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    // minHeight: "100vh",
     padding: "20px",
   },
   card: {
     background: "white",
     borderRadius: "10px",
     overflow: "hidden",
-    maxWidth: "400px",
+    maxWidth: "500px",
     width: "100%",
     boxShadow: "0 5px 15px rgba(0, 0, 0, 0.3)",
     transition: "transform 0.3s ease",
@@ -78,7 +80,7 @@ export const styles = {
   },
   specsGrid: {
     display: "grid",
-    gridTemplateColumns: "1fr 1fr",
+    gridTemplateColumns: "repeat(auto-fill, minmax(130px, 1fr))",
     gap: "15px",
     marginBottom: "25px",
   },

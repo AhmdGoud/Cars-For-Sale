@@ -9,7 +9,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 20000,
-    "image_url": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 15,
@@ -21,7 +22,8 @@
     "fuel": "Diesel",
     "transmission": "Automatic",
     "mileage": 6000,
-    "image_url": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 26,
@@ -33,7 +35,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 7000,
-    "image_url": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 28,
@@ -45,7 +48,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 19000,
-    "image_url": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 18,
@@ -57,7 +61,8 @@
     "fuel": "Electric",
     "transmission": "Automatic",
     "mileage": 3000,
-    "image_url": "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 39,
@@ -69,7 +74,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 8000,
-    "image_url": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 24,
@@ -81,7 +87,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 9000,
-    "image_url": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 8,
@@ -93,7 +100,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 3000,
-    "image_url": "https://images.unsplash.com/photo-1617654112368-307921291f42?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1617654112368-307921291f42?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 5,
@@ -105,7 +113,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 8000,
-    "image_url": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 16,
@@ -117,7 +126,8 @@
     "fuel": "Electric",
     "transmission": "Automatic",
     "mileage": 5000,
-    "image_url": "https://images.unsplash.com/photo-1536700503339-1e4b06520771?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1536700503339-1e4b06520771?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 32,
@@ -129,7 +139,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 18000,
-    "image_url": "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 19,
@@ -141,7 +152,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 3000,
-    "image_url": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 41,
@@ -153,7 +165,8 @@
     "fuel": "Hybrid",
     "transmission": "Automatic",
     "mileage": 5000,
-    "image_url": "https://images.unsplash.com/photo-1563720360172-67b8f3dce741?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1563720360172-67b8f3dce741?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 43,
@@ -165,7 +178,8 @@
     "fuel": "Diesel",
     "transmission": "Automatic",
     "mileage": 6000,
-    "image_url": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 14,
@@ -177,7 +191,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 7000,
-    "image_url": "https://images.unsplash.com/photo-1614200179396-2bdb77ebf81b?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1614200179396-2bdb77ebf81b?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 27,
@@ -189,7 +204,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 17000,
-    "image_url": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 40,
@@ -201,7 +217,8 @@
     "fuel": "Hybrid",
     "transmission": "Automatic",
     "mileage": 8000,
-    "image_url": "https://images.unsplash.com/photo-1563720360172-67b8f3dce741?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1563720360172-67b8f3dce741?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 1,
@@ -213,7 +230,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 5000,
-    "image_url": "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 47,
@@ -225,7 +243,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 7000,
-    "image_url": "https://images.unsplash.com/photo-1581540222194-0def2dda95b8?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1581540222194-0def2dda95b8?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 30,
@@ -237,7 +256,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 10000,
-    "image_url": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 2,
@@ -249,7 +269,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 18000,
-    "image_url": "https://images.unsplash.com/photo-1623869675781-80aa31012a5a?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1623869675781-80aa31012a5a?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 29,
@@ -261,7 +282,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 16000,
-    "image_url": "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 33,
@@ -273,7 +295,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 11000,
-    "image_url": "https://images.unsplash.com/photo-1581540222194-0def2dda95b8?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1581540222194-0def2dda95b8?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 7,
@@ -285,7 +308,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 8000,
-    "image_url": "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 9,
@@ -297,7 +321,8 @@
     "fuel": "Diesel",
     "transmission": "Automatic",
     "mileage": 4000,
-    "image_url": "https://images.unsplash.com/photo-1617469767053-d3b523a0b982?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1617469767053-d3b523a0b982?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 13,
@@ -309,7 +334,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 9000,
-    "image_url": "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 36,
@@ -321,7 +347,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 6000,
-    "image_url": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 21,
@@ -333,7 +360,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 4000,
-    "image_url": "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 46,
@@ -345,7 +373,8 @@
     "fuel": "Petrol",
     "transmission": "Manual",
     "mileage": 8000,
-    "image_url": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 50,
@@ -357,7 +386,8 @@
     "fuel": "Hybrid",
     "transmission": "Automatic",
     "mileage": 10000,
-    "image_url": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 17,
@@ -369,7 +399,8 @@
     "fuel": "Electric",
     "transmission": "Automatic",
     "mileage": 4000,
-    "image_url": "https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 25,
@@ -381,7 +412,8 @@
     "fuel": "Petrol",
     "transmission": "Manual",
     "mileage": 6000,
-    "image_url": "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 3,
@@ -393,7 +425,8 @@
     "fuel": "Hybrid",
     "transmission": "Automatic",
     "mileage": 6000,
-    "image_url": "https://images.unsplash.com/photo-1619682817481-e994891cd1f5?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1619682817481-e994891cd1f5?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 12,
@@ -405,7 +438,8 @@
     "fuel": "Diesel",
     "transmission": "Automatic",
     "mileage": 5000,
-    "image_url": "https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 48,
@@ -417,7 +451,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 13000,
-    "image_url": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 20,
@@ -429,7 +464,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 2000,
-    "image_url": "https://images.unsplash.com/photo-1536700503339-1e4b06520771?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1536700503339-1e4b06520771?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 4,
@@ -441,7 +477,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 12000,
-    "image_url": "https://images.unsplash.com/photo-1590362891991-f776e747a588?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1590362891991-f776e747a588?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 34,
@@ -453,7 +490,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 9000,
-    "image_url": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 6,
@@ -465,7 +503,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 7000,
-    "image_url": "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 10,
@@ -477,7 +516,8 @@
     "fuel": "Diesel",
     "transmission": "Automatic",
     "mileage": 15000,
-    "image_url": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 37,
@@ -489,7 +529,8 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 16000,
-    "image_url": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&h=400&fit=crop",
+    "checked": false
   },
   {
     "id": 11,
@@ -501,6 +542,7 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 12000,
-    "image_url": "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&h=400&fit=crop"
+    "image_url": "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&h=400&fit=crop",
+    "checked": false
   }
 ]
