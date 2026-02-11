@@ -40,7 +40,8 @@
   background-color: #0048e0;
   color: #fff;
 }
-.compareCard {
+.compareCard,
+.loanCard {
   padding: 0 12px;
   background-color: #0048e0;
   color: #fff;
@@ -49,18 +50,56 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  height: 400px;
-  width: 100%;
+  height: 100vh;
   font-size: 33px;
-  margin: 20px auto;
   position: fixed;
-  top: 100px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 11;
 }
 .comparsion {
   padding: 8px 12px;
   background-color: #fff;
   color: #0048e0;
+  width: 90%;
+  justify-content: space-around;
+}
+.reselectBnt,
+.confirmCompareBtn {
+  padding: 8px 12px;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0 8px;
+}
+.loanBackBtn {
+  font-size: 22px;
+  padding: 8px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.loanInfo {
+  width: 80%;
+  background-color: #fff;
+  color: #0048e0;
+  padding: 12px 18px;
+}
+.loanInfo p {
+  text-align: start;
+  margin: 12px 0;
+}
+.loanInfo span {
+  color: rgba(189, 9, 9, 0.74);
+  font-weight: 500;
+}
+.monthlyPayment {
+  background-color: #0048e0;
+  padding: 12px 18px;
+  color: #fff;
+  font-size: 48px;
 }
 
 @media (max-width: 660px) {

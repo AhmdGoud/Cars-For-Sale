@@ -14,9 +14,12 @@ const Cars = () => {
   const [searchBtnColor, setSearchBtnColor] = useState("gray");
 
   const [compareCardDisplay, setCompareCardDisplay] = useState(false);
+  const [loanCardDisplay, setLoanCardDisplay] = useState(false);
   const [comparsionDisplay, setComparsionDisplay] = useState(false);
+
   const [numOfChoosedCars, setNumOfChoosedCars] = useState(0);
   const [choosedCars, setChoosedCars] = useState([]);
+  const [carForLoan, setCarForLoan] = useState("");
 
   function chooseCar(ID) {
     let numCars = numOfChoosedCars;
@@ -25,20 +28,29 @@ const Cars = () => {
       if (car.id === ID) {
         numCars = car.checked ? numCars - 1 : numCars + 1;
 
-        setChoosedCars((prev) => {
-          return [
-            ...prev,
-            {
-              id: car.id,
-              brand: car.brand,
-              model: car.model,
-              year: car.year,
-              price: car.price,
-              color: car.color,
-              fuel: car.fuel,
-            },
-          ];
-        });
+        const carChoosed = {
+          id: car.id,
+          brand: car.brand,
+          model: car.model,
+          year: car.year,
+          price: car.price,
+          color: car.color,
+          fuel: car.fuel,
+        };
+
+        if (choosedCars.length > 0) {
+          if (choosedCars[0].id === ID) {
+            setChoosedCars([]);
+          } else {
+            setChoosedCars((prev) => {
+              return [...prev, carChoosed];
+            });
+          }
+        } else {
+          setChoosedCars((prev) => {
+            return [...prev, carChoosed];
+          });
+        }
 
         return { ...car, checked: !car.checked };
       } else {
@@ -136,7 +148,15 @@ const Cars = () => {
                 >
                   {carData.checked ? "Remove" : "Compare"}
                 </button>
-                <button className="loanBtn">Loan Calculator</button>
+                <button
+                  className="loanBtn"
+                  onClick={() => {
+                    setLoanCardDisplay(true);
+                    loanCalc(carData.id);
+                  }}
+                >
+                  Loan Calculator
+                </button>
               </div>
             </div>
           </div>
@@ -151,6 +171,13 @@ const Cars = () => {
     setNumOfChoosedCars(0);
     setComparsionDisplay(false);
     setCompareCardDisplay(false);
+  };
+
+  const loanCalc = (ID) => {
+    const theCar = carsList.find((car) => {
+      return car.id === ID;
+    });
+    setCarForLoan(theCar);
   };
 
   return (
@@ -207,24 +234,11 @@ const Cars = () => {
       >
         <div>
           <span>you have choosed 2 cars, can't add more</span>
-          <button
-            style={{
-              padding: "8px 12px",
-              fontSize: "22px",
-              cursor: "pointer",
-              margin: "0 8px",
-            }}
-            onClick={() => backToChoose()}
-          >
+          <button className="reselectBnt" onClick={() => backToChoose()}>
             Reselect
           </button>
           <button
-            style={{
-              padding: "8px 12px",
-              fontSize: "22px",
-              cursor: "pointer",
-              margin: "0 8px",
-            }}
+            className="confirmCompareBtn"
             onClick={() => {
               setComparsionDisplay(true);
             }}
@@ -241,11 +255,7 @@ const Cars = () => {
 
         <div
           className="comparsion"
-          style={{
-            width: "100%",
-            display: comparsionDisplay ? "flex" : "none",
-            justifyContent: "space-around",
-          }}
+          style={{ display: comparsionDisplay ? "flex" : "none" }}
         >
           <div
             style={{
@@ -270,7 +280,7 @@ const Cars = () => {
                     </p>
                     <p>{car.model}</p>
                     <p>{car.year}</p>
-                    <p>{car.price}</p>
+                    <p>{car.price} $</p>
                     <p>{car.color}</p>
                     <p>{car.fuel}</p>
                   </div>
@@ -278,6 +288,36 @@ const Cars = () => {
               })
             : ""}
         </div>
+      </div>
+
+      <div
+        className="loanCard"
+        style={{ display: loanCardDisplay ? "flex" : "none" }}
+      >
+        <div className="loanInfo">
+          <p>
+            <span>Car Price:</span> {carForLoan.price}$
+          </p>
+          <p>
+            <span>Interest Rate:</span> 5%
+          </p>
+          <p>
+            <span>Down Payement:</span> {carForLoan.price * (5 / 100)}$
+          </p>
+          <p>
+            <span>Loan Terms:</span> 5 years
+          </p>
+          <div className="monthlyPayment">
+            <span>Monthly Payment: </span>
+            {Math.ceil((carForLoan.price - carForLoan.price * (5 / 100)) / 60)}$
+          </div>
+        </div>
+        <button
+          className="loanBackBtn"
+          onClick={() => setLoanCardDisplay(false)}
+        >
+          X
+        </button>
       </div>
 
       <div style={styles.carsCard}>{carCard}</div>
