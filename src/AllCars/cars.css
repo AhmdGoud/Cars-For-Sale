@@ -101,6 +101,15 @@
   color: #fff;
   font-size: 48px;
 }
+.loanInfo button {
+  padding: 3px 8px;
+  font-size: 18px;
+  margin: 3px;
+}
+#loan-terms {
+  color: #0048e0;
+  margin: 0 8px;
+}
 
 @media (max-width: 660px) {
   .searchBar {

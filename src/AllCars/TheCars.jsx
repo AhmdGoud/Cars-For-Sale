@@ -21,6 +21,8 @@ const Cars = () => {
   const [choosedCars, setChoosedCars] = useState([]);
   const [carForLoan, setCarForLoan] = useState("");
 
+  const [loanTerms, setLoanTerms] = useState(5);
+
   function chooseCar(ID) {
     let numCars = numOfChoosedCars;
 
@@ -299,18 +301,47 @@ const Cars = () => {
             <span>Car Price:</span> {carForLoan.price}$
           </p>
           <p>
-            <span>Interest Rate:</span> 5%
+            <span>Interest Rate:</span> {loanTerms * 2}%
           </p>
           <p>
             <span>Down Payement:</span> {carForLoan.price * (5 / 100)}$
           </p>
           <p>
-            <span>Loan Terms:</span> 5 years
+            <span>Loan Terms (years):</span>{" "}
+            <button
+              onClick={() => (loanTerms > 1 ? setLoanTerms(loanTerms - 1) : "")}
+            >
+              -
+            </button>
+            <span id="loan-terms">{loanTerms}</span>
+            <button
+              onClick={() => (loanTerms < 5 ? setLoanTerms(loanTerms + 1) : "")}
+            >
+              +
+            </button>
           </p>
           <div className="monthlyPayment">
             <span>Monthly Payment: </span>
-            {Math.ceil((carForLoan.price - carForLoan.price * (5 / 100)) / 60)}$
+            {Math.ceil(
+              (carForLoan.price -
+                carForLoan.price * (5 / 100) +
+                ((loanTerms * 2) / 100) * carForLoan.price) /
+                (loanTerms * 12),
+            )}
+            $
           </div>
+          <p>
+            <span>Total Payments: </span>
+            {Math.ceil(
+              (carForLoan.price -
+                carForLoan.price * (5 / 100) +
+                ((loanTerms * 2) / 100) * carForLoan.price) /
+                (loanTerms * 12),
+            ) *
+              (loanTerms * 12) +
+              carForLoan.price * (5 / 100)}
+            $
+          </p>
         </div>
         <button
           className="loanBackBtn"
