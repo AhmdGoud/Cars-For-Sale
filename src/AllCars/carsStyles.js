@@ -5,7 +5,6 @@ export const styles = {
     gap: "10px",
     width: "90%",
     margin: "40px auto",
-    border: "1px solid gray",
     borderRadius: "3px",
   },
   container: {
@@ -18,11 +17,11 @@ export const styles = {
   },
   card: {
     background: "white",
-    borderRadius: "10px",
+    borderRadius: "5px",
     overflow: "hidden",
     maxWidth: "500px",
     width: "100%",
-    boxShadow: "0 5px 15px rgba(0, 0, 0, 0.3)",
+    boxShadow: "0 3px 8px rgba(0, 0, 0, 0.3)",
     transition: "transform 0.3s ease",
   },
   imageContainer: {

@@ -5,9 +5,13 @@
   border-radius: 3px;
   cursor: pointer;
 }
-
 .searchBar {
   width: 50%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  padding-bottom: 20px;
+  /* border-bottom: 3px solid #0048e0; */
 }
 .searchBtnStyle {
   padding: 5px 8px;
@@ -18,6 +22,71 @@
   right: 0px;
   cursor: pointer;
 }
+
+.priceRange {
+  width: 55%;
+  margin: auto;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.priceRangeInput {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 70%;
+  margin: 10px;
+  height: 6px;
+  border-radius: 999px;
+  outline: none;
+
+  /* gray background */
+  background: linear-gradient(
+    to right,
+    #0048e0 0%,
+    #0048e0 100% /* #e5e7eb 50%,
+    #e5e7eb 100% */
+  );
+
+  transition: background 0.2s ease;
+}
+
+/* ===== THUMB (circle handle) ===== */
+.priceRangeInput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid #0048e0;
+  cursor: pointer;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.15s ease;
+}
+
+.priceRangeInput::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+}
+
+/* Firefox */
+.priceRangeInput::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid #0048e0;
+  cursor: pointer;
+}
+
+/* Track for Firefox */
+.priceRangeInput::-moz-range-track {
+  height: 6px;
+  border-radius: 999px;
+  background: #e5e7eb;
+}
+
 .compareBtn {
   background-color: #0048e0;
   color: #fff;
@@ -53,11 +122,12 @@
   height: 100vh;
   font-size: 33px;
   position: fixed;
-  top: 0;
+  top: -90vh;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 11;
+  transition: 0.5s;
 }
 .comparsion {
   padding: 8px 12px;
@@ -66,6 +136,10 @@
   width: 90%;
   justify-content: space-around;
 }
+.brandName {
+  color: #ad0606;
+  font-size: "37px";
+}
 .reselectBnt,
 .confirmCompareBtn {
   padding: 8px 12px;
@@ -73,7 +147,7 @@
   cursor: pointer;
   margin: 0 8px;
 }
-.loanBackBtn {
+.backBtn {
   font-size: 22px;
   padding: 8px;
   cursor: pointer;
@@ -111,13 +185,27 @@
   margin: 0 8px;
 }
 
+/* at media queries  */
 @media (max-width: 660px) {
   .searchBar {
     width: 80%;
+  }
+  .priceRange {
+    width: 90%;
+  }
+  .priceRangeInput {
+    width: 55%;
   }
 }
 @media (max-width: 550px) {
   .searchBar {
     width: 90%;
+  }
+  .comparsion {
+    width: 100%;
+    font-size: 20px;
+  }
+  .brandName {
+    font-size: 25px;
   }
 }

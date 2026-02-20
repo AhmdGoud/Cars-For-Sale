@@ -35,7 +35,7 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 7000,
-    "image_url": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=600&h=400&fit=crop",
+    "image_url": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=600&h=400&fit=crop",
     "checked": false
   },
   {
@@ -113,7 +113,7 @@
     "fuel": "Petrol",
     "transmission": "Automatic",
     "mileage": 8000,
-    "image_url": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=600&h=400&fit=crop",
+    "image_url": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=600&h=400&fit=crop",
     "checked": false
   },
   {

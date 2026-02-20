@@ -16,13 +16,13 @@ const LandingPage = () => {
               redefined<span>!</span>
             </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-              dicta quo recusandae iure Nulla, perspiciatis. Nulla,
-              perspiciatis.
+              Experience car shopping reimagined. Browse premium vehicles,
+              compare features, secure flexible loan options, and make confident
+              decisions with a platform built for modern drivers.
             </p>
             <Link to={"/cars"}>
               <div className="btn">
-                <a href="#cars">explore cars</a>
+                <div href="#cars">explore cars</div>
               </div>
             </Link>
           </div>

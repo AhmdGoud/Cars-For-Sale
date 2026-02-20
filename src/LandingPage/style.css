@@ -58,49 +58,7 @@ nav {
 .social li:hover ion-icon {
   transform: scale(1.1);
 }
-.dropmenu-btn {
-  color: black;
-  position: relative;
-  right: -5px;
-  z-index: 1111;
-}
-.dropmenu-btn ion-icon {
-  font-size: 22px;
-  display: none;
-  cursor: pointer;
-  color: #eaeaea;
-}
-.dropmenu {
-  flex-direction: column;
-  background-color: #eaeaea;
-  position: absolute;
-  top: 27px;
-  right: 3px;
-  border-radius: 2px;
-  padding: 5px 0;
-  display: none;
-}
-.dropmenu a {
-  color: black;
-}
-.dropmenu a:hover {
-  color: var(--main-color);
-}
-.show-dropmenu {
-  display: flex;
-}
-.dropmenu::before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-top: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid #eaeaea;
-  border-left: 5px solid transparent;
-  position: absolute;
-  top: -15px;
-  right: 1px;
-}
+
 /*start header*/
 .header {
   padding-top: 150px;
@@ -168,12 +126,12 @@ h2 span {
   text-transform: capitalize;
   cursor: pointer;
 }
-.btn a {
+.btn div {
   color: var(--main-color);
 }
 .btn:hover {
   background-color: var(--main-color);
 }
-.btn:hover a {
+.btn:hover div {
   color: #fff;
 }
