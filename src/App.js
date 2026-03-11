@@ -1,13 +1,13 @@
-import "./App.css";
+import "./styles/App.css";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LandingPage from "./LandingPage/LandingPage";
+import LandingPage from "./pages/LandingPage/LandingPage";
 
-import TheOutlet from "./AllCars/TheOutlet";
+import TheOutlet from "./components/TheOutlet";
 
-import cars from "./Cars.json";
-import { theCars } from "./AllCars/CarsContext";
-import Cars from "./AllCars/TheCars";
+import cars from "./data/Cars.json";
+import { theCars } from "./context/CarsContext";
+import Cars from "./components/Cars";
 
 function App() {
   return (

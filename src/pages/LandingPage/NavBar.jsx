@@ -1,5 +1,5 @@
-import "./style.css";
-import "./queries.css";
+import "../../styles/landingPage.css";
+import "../../styles/landingPageQueries.css";
 
 const NavBar = () => {
   return (

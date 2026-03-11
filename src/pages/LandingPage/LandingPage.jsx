@@ -1,6 +1,6 @@
-import car from "../car.png";
-import "./style.css";
-import "./queries.css";
+import car from "../../assets/car.png";
+import "../../styles/landingPage.css";
+import "../../styles/landingPageQueries.css";
 import NavBar from "./NavBar";
 import { Link } from "react-router-dom";
 
