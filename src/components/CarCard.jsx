@@ -75,6 +75,7 @@ const CarCard = ({ carData, onCompare, onLoanCalc }) => {
                 paddingBottom: "10px",
               }}
             >
+              {/* compare button  */}
               <button
                 className="compareBtn"
                 style={{
@@ -84,6 +85,7 @@ const CarCard = ({ carData, onCompare, onLoanCalc }) => {
               >
                 {carData.checked ? "Remove" : "Compare"}
               </button>
+              {/* loan button  */}
               <button
                 className="loanBtn"
                 onClick={() => onLoanCalc(carData.id)}
