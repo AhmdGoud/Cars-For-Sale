@@ -14,8 +14,8 @@ A modern React web application for browsing and filtering cars based on price an
 
 - 🔍 Search cars by name
 - 💰 Filter cars by price range
-- 🔄 Reset filters
-- 🏠 Navigation (Back Home)
+- 🧮 Loan calculator for estimating monthly payments
+- ⚖️ Compare cars side-by-side
 - ⚡ Fast and responsive UI
 
 ---
