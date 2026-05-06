@@ -11,7 +11,7 @@ import Cars from "./components/Cars";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Cars-For-Sale">
       <theCars.Provider value={cars}>
         <div className="App">
           <Routes>
