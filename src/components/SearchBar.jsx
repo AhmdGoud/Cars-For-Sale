@@ -8,29 +8,28 @@ const SearchBar = ({
 }) => {
   return (
     <div className="searchBar">
-      <Link to={"/"}>
-        <button
-          className="backHome"
-          style={{ width: "120px", marginRight: "10px", padding: "5px" }}
-        >
-          Back Home
-        </button>
+      <Link to="/" className="backHome">
+        Back Home
       </Link>
 
-      <input
-        style={{ width: "100%", padding: "3px 8px", outline: "none" }}
-        value={searchValue}
-        placeholder="Search By Name"
-        onChange={onSearchChange}
-      />
+      <div className="searchBarInner">
+        <label className="searchInputWrapper">
+          <input
+            type="search"
+            value={searchValue}
+            placeholder="Search by car make or model"
+            onChange={onSearchChange}
+          />
+        </label>
 
-      <button
-        className="searchBtnStyle"
-        style={{ backgroundColor: searchBtnColor }}
-        onClick={onSearch}
-      >
-        Search
-      </button>
+        <button
+          className="searchBtnStyle"
+          style={{ backgroundColor: searchBtnColor }}
+          onClick={onSearch}
+        >
+          Search
+        </button>
+      </div>
     </div>
   );
 };

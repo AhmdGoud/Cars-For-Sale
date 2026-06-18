@@ -6,24 +6,30 @@ const PriceRangeFilter = ({
 }) => {
   return (
     <div className="priceRange">
-      <label>Price</label>
-      <input
-        ref={priceRangeRef}
-        type="range"
-        className="priceRangeInput"
-        min="50000"
-        max="500000"
-        step="5000"
-        value={rangeValue}
-        onChange={onRangeChange}
-      />
-      <span style={{ color: "#0048e0", fontWeight: "500" }}>{rangeValue}$</span>
-      <button
-        style={{ padding: "3px 8px", cursor: "pointer" }}
-        onClick={onReset}
-      >
-        Reset
-      </button>
+      <div className="priceRangeHeader">
+        <div>
+          <p>Slide to set your top budget</p>
+        </div>
+        <span className="priceValue">${rangeValue.toLocaleString()}</span>
+      </div>
+
+      <div className="priceRangeBody">
+        <input
+          ref={priceRangeRef}
+          type="range"
+          className="priceRangeInput"
+          min="50000"
+          max="500000"
+          step="5000"
+          value={rangeValue}
+          onChange={onRangeChange}
+        />
+        <div className="priceRangeActions">
+          <button className="resetRangeBtn" onClick={onReset}>
+            Reset
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

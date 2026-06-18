@@ -1,8 +1,9 @@
-import { useContext, useMemo, useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import { theCars } from "../context/CarsContext";
 import { styles } from "./carsStyles";
 import "../styles/cars.css";
 
+import NavBar from "../pages/LandingPage/NavBar";
 import SearchBar from "./SearchBar";
 import PriceRangeFilter from "./PriceRangeFilter";
 import CarCard from "./CarCard";
@@ -18,6 +19,10 @@ const Cars = () => {
   const [searchValue, setSearchValue] = useState("");
   const [rangeValue, setRangeValue] = useState(500000);
   const [searchBtnColor, setSearchBtnColor] = useState("gray");
+
+  // pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 9;
 
   // compare card
   const [compareCardDisplay, setCompareCardDisplay] = useState(false);
@@ -42,6 +47,8 @@ const Cars = () => {
 
   function handleSearchChange(e) {
     setSearchValue(e.target.value);
+    setCurrentPage(1);
+
     if (e.target.value === "") {
       setCarsList(list);
       setSearchBtnColor("gray");
@@ -69,6 +76,7 @@ const Cars = () => {
 
   function resetPriceFilter() {
     setRangeValue(500000);
+    setCurrentPage(1);
     setCarsList(list);
     priceRangeInput.current.style.background = `
       linear-gradient(to right, #0048e0 0%, #0048e0 100%)
@@ -129,19 +137,30 @@ const Cars = () => {
     setCompareCardDisplay(false);
   }
 
-  const carCards = useMemo(() => {
-    return carsList.map((carData) => (
-      <CarCard
-        key={carData.id}
-        carData={carData}
-        onCompare={chooseCarToCompare}
-        onLoanCalc={handleLoanCalc}
-      />
-    ));
-  }, [carsList]);
+  const totalPages = Math.max(1, Math.ceil(carsList.length / itemsPerPage));
+  const currentCars = carsList.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage,
+  );
+
+  const carCards = currentCars.map((carData) => (
+    <CarCard
+      key={carData.id}
+      carData={carData}
+      onCompare={chooseCarToCompare}
+      onLoanCalc={handleLoanCalc}
+    />
+  ));
+
+  function handlePageChange(page) {
+    setCurrentPage(page);
+    window.scrollTo({ top: 120, behavior: "smooth" });
+  }
 
   return (
-    <div style={{ padding: "50px 0" }}>
+    <div style={{ padding: "0 0 50px" }}>
+      <NavBar className="carsPageNav" />
+
       <SearchBar
         searchValue={searchValue}
         searchBtnColor={searchBtnColor}
@@ -174,6 +193,37 @@ const Cars = () => {
       />
 
       <div style={styles.carsCard}>{carCards}</div>
+
+      <div className="pagination">
+        <button
+          type="button"
+          onClick={() => handlePageChange(Math.max(1, currentPage - 1))}
+          disabled={currentPage === 1}
+        >
+          Prev
+        </button>
+
+        {Array.from({ length: totalPages }, (_, index) => (
+          <button
+            key={index + 1}
+            type="button"
+            className={currentPage === index + 1 ? "active" : ""}
+            onClick={() => handlePageChange(index + 1)}
+          >
+            {index + 1}
+          </button>
+        ))}
+
+        <button
+          type="button"
+          onClick={() =>
+            handlePageChange(Math.min(totalPages, currentPage + 1))
+          }
+          disabled={currentPage === totalPages}
+        >
+          Next
+        </button>
+      </div>
     </div>
   );
 };

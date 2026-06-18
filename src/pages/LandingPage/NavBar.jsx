@@ -1,9 +1,9 @@
 import "../../styles/landingPage.css";
 import "../../styles/landingPageQueries.css";
 
-const NavBar = () => {
+const NavBar = ({ className = "" }) => {
   return (
-    <nav>
+    <nav className={className}>
       <div className="logo">cars.</div>
       <div className="social">
         <ul>
