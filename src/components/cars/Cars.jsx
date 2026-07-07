@@ -1,14 +1,14 @@
 import { useContext, useRef, useState } from "react";
-import { theCars } from "../context/CarsContext";
-import { styles } from "./carsStyles";
-import "../styles/cars.css";
+import { theCars } from "../../context/CarsContext";
+import { styles } from "../../styles/carsStyles";
+import "../../styles/cars.css";
 
-import NavBar from "../pages/LandingPage/NavBar";
-import SearchBar from "./SearchBar";
-import PriceRangeFilter from "./PriceRangeFilter";
+import NavBar from "../shared/NavBar";
+import SearchBar from "../features/SearchBar";
+import PriceRangeFilter from "../features/PriceRangeFilter";
 import CarCard from "./CarCard";
-import CompareCard from "./CompareModal";
-import LoanCard from "./LoanModal";
+import CompareCard from "../features/CompareModal";
+import LoanCard from "../features/LoanModal";
 
 const Cars = () => {
   const priceRangeInput = useRef(null);
@@ -174,7 +174,6 @@ const Cars = () => {
         onRangeChange={handleRangeChange}
         onReset={resetPriceFilter}
       />
-
       <CompareCard
         isVisible={compareCardDisplay}
         comparsionDisplay={comparsionDisplay}

@@ -1,7 +1,7 @@
 import car from "../../assets/car.png";
 import "../../styles/landingPage.css";
 import "../../styles/landingPageQueries.css";
-import NavBar from "./NavBar";
+import NavBar from "../../components/shared/NavBar";
 import { Link } from "react-router-dom";
 
 const LandingPage = () => {

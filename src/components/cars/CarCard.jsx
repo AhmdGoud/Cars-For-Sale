@@ -1,10 +1,11 @@
-import { styles } from "./carsStyles";
+import { styles } from "../../styles/carsStyles";
 
 const CarCard = ({ carData, onCompare, onLoanCalc }) => {
   return (
     <div className="car-card" id={carData.id} key={carData.id}>
       <div style={styles.container}>
         <div
+          className="carCardInner"
           style={{
             ...styles.card,
             border: carData.checked ? "2px solid blue" : "none",

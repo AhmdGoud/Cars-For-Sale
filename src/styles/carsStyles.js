@@ -2,10 +2,13 @@ export const styles = {
   carsCard: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
-    gap: "10px",
-    width: "90%",
+    gap: "24px",
+    width: "100%",
+    maxWidth: "1280px",
     margin: "40px auto",
-    borderRadius: "3px",
+    padding: "0 16px",
+    borderRadius: "8px",
+    alignItems: "stretch",
   },
   container: {
     fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",

@@ -249,6 +249,25 @@
   background-color: #0048e0;
   color: #fff;
 }
+.car-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.car-card .carCardInner {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+.car-card:hover .carCardInner {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+}
+.car-card:hover .compareBtn,
+.car-card:hover .loanBtn {
+  transform: translateY(-1px);
+}
 .compareCard,
 .loanCard {
   padding: 0 12px;
@@ -363,7 +382,7 @@
   .carsPageNav,
   .searchBar,
   .priceRange {
-    width: 100%;
+    width: 90%;
     max-width: 100%;
   }
 

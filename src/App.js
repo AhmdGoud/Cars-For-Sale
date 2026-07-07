@@ -3,11 +3,11 @@ import "./styles/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage/LandingPage";
 
-import TheOutlet from "./components/TheOutlet";
+import TheOutlet from "./components/layout/TheOutlet";
 
 import cars from "./data/Cars.json";
 import { theCars } from "./context/CarsContext";
-import Cars from "./components/Cars";
+import Cars from "./components/cars/Cars";
 
 function App() {
   return (
