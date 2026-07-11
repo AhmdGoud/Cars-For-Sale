@@ -1,18 +1,24 @@
 # 🚗 Cars For Sale
 
-A modern React web application for browsing and filtering cars based on price and name.
+A modern car dealership interface built with React, featuring price comparison, a loan calculator, advanced search and filtering, and detailed vehicle pages. Focused on clean UI, smooth user experience, and scalable front-end architecture.
 
 ---
 
 ## 📸 Preview
 
-![App Screenshot](./src/assets/car.png)
+| Home                        | cars                        |
+| --------------------------- | --------------------------- |
+| ![](./screenshots/home.png) | ![](./screenshots/cars.png) |
+
+| carCard  
+| ---------------------------
+| ![](./screenshots/carCard.png)
 
 ---
 
 ## 🚀 Features
 
-- 🔍 Search cars by name
+- 🔍 Search cars by brand
 - 💰 Filter cars by price range
 - 🧮 Loan calculator for estimating monthly payments
 - ⚖️ Compare cars side-by-side
@@ -23,19 +29,36 @@ A modern React web application for browsing and filtering cars based on price an
 ## 🛠️ Built With
 
 - React.js
-- JavaScript (ES6+)
-- CSS3
 - React Router
+- JavaScript (ES6+)
+- HTML
+- CSS3
+- Responsive design
 
 ---
 
 ## 📂 Project Structure
 
 src/
-├── components # UI components
-├── pages # App pages
-├── context # Global state
-├── hooks # Custom hooks
-├── assets # Images & static files
-├── styles # CSS files
+├── components
+├── pages
+├── context
+├── hooks
+├── assets
+├── styles
 └── App.js
+
+---
+
+## 🌐 Live Demo
+
+**Demo:** https://ahmdgoud.github.io/Cars-For-Sale/#/
+
+---
+
+## 👨‍💻 Author
+
+**Ahmed AbdelRahman**
+
+- Portfolio: https://ahmdgoud.github.io/AhmedAbdelRahman/
+- LinkedIn: https://www.linkedin.com/in/ahmed-abdelrahman-7ab52b231/
