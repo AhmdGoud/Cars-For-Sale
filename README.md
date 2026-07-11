@@ -8,11 +8,11 @@ A modern car dealership interface built with React, featuring price comparison, 
 
 | Home                        | cars                        |
 | --------------------------- | --------------------------- |
-| ![](./screenshots/home.png) | ![](./screenshots/cars.png) |
+| ![](./screenShots/home.png) | ![](./screenShots/cars.png) |
 
 | carCard  
 | ---------------------------
-| ![](./screenshots/carCard.png)
+| ![](./screenShots/carCard.png)
 
 ---
 
