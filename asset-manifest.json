@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Cars-For-Sale/static/css/main.d2f02e7a.css",
-    "main.js": "/Cars-For-Sale/static/js/main.9b45a418.js",
+    "main.css": "/Cars-For-Sale/static/css/main.f67a0414.css",
+    "main.js": "/Cars-For-Sale/static/js/main.c1361285.js",
     "static/media/car.png": "/Cars-For-Sale/static/media/car.b5c015ff6503544e7803.png",
     "index.html": "/Cars-For-Sale/index.html",
-    "main.d2f02e7a.css.map": "/Cars-For-Sale/static/css/main.d2f02e7a.css.map",
-    "main.9b45a418.js.map": "/Cars-For-Sale/static/js/main.9b45a418.js.map"
+    "main.f67a0414.css.map": "/Cars-For-Sale/static/css/main.f67a0414.css.map",
+    "main.c1361285.js.map": "/Cars-For-Sale/static/js/main.c1361285.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2f02e7a.css",
-    "static/js/main.9b45a418.js"
+    "static/css/main.f67a0414.css",
+    "static/js/main.c1361285.js"
   ]
 }
