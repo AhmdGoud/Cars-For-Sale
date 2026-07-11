@@ -1,25 +1,3 @@
-.backHome {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 120px;
-  padding: 0.85rem 1.2rem;
-  border-radius: 10px;
-  border: 1px solid #0048e0;
-  color: #0048e0;
-  background-color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  transition:
-    background-color 0.2s ease,
-    color 0.2s ease,
-    transform 0.2s ease;
-}
-.backHome:hover {
-  background-color: #0048e0;
-  color: #fff;
-  transform: translateY(-1px);
-}
 .carsPageNav {
   width: 90%;
   margin: 0 auto 1.5rem;
@@ -37,6 +15,9 @@
 .carsPageNav .logo {
   font-size: 1.5rem;
   font-weight: 700;
+  color: #0f172a;
+}
+.landPageNav .logo {
   color: #0f172a;
 }
 .carsPageNav .social ul {
@@ -63,6 +44,13 @@
 }
 .carsPageNav .social a:hover ion-icon {
   color: #6380ca;
+}
+
+.search-filter {
+  display: flex;
+  gap: 10px;
+  width: 90%;
+  margin: auto;
 }
 .searchBar {
   width: 90%;
@@ -384,6 +372,14 @@
   .priceRange {
     width: 90%;
     max-width: 100%;
+  }
+
+  .search-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin: auto;
   }
 
   .carsPageNav {

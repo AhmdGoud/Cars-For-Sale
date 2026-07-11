@@ -1,10 +1,13 @@
+import { Link } from "react-router-dom";
 import "../../styles/landingPage.css";
 import "../../styles/landingPageQueries.css";
 
 const NavBar = ({ className = "" }) => {
   return (
     <nav className={className}>
-      <div className="logo">cars.</div>
+      <Link to="/">
+        <div className="logo">cars.</div>
+      </Link>
       <div className="social">
         <ul>
           <li>

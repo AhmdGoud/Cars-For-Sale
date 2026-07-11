@@ -161,19 +161,21 @@ const Cars = () => {
     <div style={{ padding: "0 0 50px" }}>
       <NavBar className="carsPageNav" />
 
-      <SearchBar
-        searchValue={searchValue}
-        searchBtnColor={searchBtnColor}
-        onSearchChange={handleSearchChange}
-        onSearch={handleSearch}
-      />
+      <div className="search-filter">
+        <SearchBar
+          searchValue={searchValue}
+          searchBtnColor={searchBtnColor}
+          onSearchChange={handleSearchChange}
+          onSearch={handleSearch}
+        />
 
-      <PriceRangeFilter
-        rangeValue={rangeValue}
-        priceRangeRef={priceRangeInput}
-        onRangeChange={handleRangeChange}
-        onReset={resetPriceFilter}
-      />
+        <PriceRangeFilter
+          rangeValue={rangeValue}
+          priceRangeRef={priceRangeInput}
+          onRangeChange={handleRangeChange}
+          onReset={resetPriceFilter}
+        />
+      </div>
       <CompareCard
         isVisible={compareCardDisplay}
         comparsionDisplay={comparsionDisplay}

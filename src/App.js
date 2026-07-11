@@ -1,6 +1,6 @@
 import "./styles/App.css";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage/LandingPage";
 
 import TheOutlet from "./components/layout/TheOutlet";
@@ -11,7 +11,7 @@ import Cars from "./components/cars/Cars";
 
 function App() {
   return (
-    <BrowserRouter basename="/Cars-For-Sale">
+    <HashRouter>
       <theCars.Provider value={cars}>
         <div className="App">
           <Routes>
@@ -22,7 +22,7 @@ function App() {
           </Routes>
         </div>
       </theCars.Provider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

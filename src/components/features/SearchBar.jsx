@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const SearchBar = ({
   searchValue,
   searchBtnColor,
@@ -8,16 +6,12 @@ const SearchBar = ({
 }) => {
   return (
     <div className="searchBar">
-      <Link to="/" className="backHome">
-        Back Home
-      </Link>
-
       <div className="searchBarInner">
         <label className="searchInputWrapper">
           <input
             type="search"
             value={searchValue}
-            placeholder="Search by car make or model"
+            placeholder="Search by car brand "
             onChange={onSearchChange}
           />
         </label>
